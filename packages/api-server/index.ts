@@ -6,7 +6,7 @@ import cors from 'cors';
 const main = async () => {
   const app = express();
   app.use(cors());
-  const port = 8080;
+  const port = 9090;
 
   app.use(
     '/trpc',
