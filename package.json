@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "deploy": "yarn && yarn concurrently \"wsrun --parallel deploy\""
+    "deploy": "npm install -g concurrently && concurrently --kill-others-on-fail \"wsrun --parallel deploy\""
   },
   "workspaces": [
     "packages/*"
