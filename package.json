@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "deploy": "concurrently \"wsrun --parallel deploy\""
+    "deploy": "yarn concurrently \"wsrun --parallel deploy\""
   },
   "workspaces": [
     "packages/*"
