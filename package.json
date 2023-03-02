@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "deploy": "yarn && concurrently \"wsrun --parallel deploy\""
+    "deploy": "concurrently \"wsrun --parallel deploy\""
   },
   "workspaces": [
     "packages/*"
@@ -13,5 +13,8 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "wsrun": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=14.18.0"
   }
 }
